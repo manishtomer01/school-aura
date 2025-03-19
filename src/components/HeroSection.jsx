@@ -1,8 +1,12 @@
 import { Eye, EyeOff } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import user from "/src/assets/user-img.png";
 import { FaChevronUp } from "react-icons/fa";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function HeroSection() {
   const solutions = [
@@ -37,6 +41,15 @@ export default function HeroSection() {
   ];
   const [showPassword, setShowPassword] = useState(false);
   const [activeTab, setActiveTab] = useState("student");
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      containerRef.current,
+      { scale: 0, opacity: 0, transformOrigin: "center bottom" },
+      { scale: 1, opacity: 1, duration: 1.5, ease: "power3.out" }
+    );
+  }, []);
   return (
     <div
       id="moveUp"
@@ -46,7 +59,7 @@ export default function HeroSection() {
         backgroundPosition: "center",
       }}
     >
-      <div className="flex gap-4 m-6 pt-10">
+      <div ref={containerRef} className="flex gap-4 m-6 pt-10">
         <div className="">
           <div className="">
             <h1 className="text-5xl md:text-6xl text-white mb-2">
