@@ -2,6 +2,8 @@ import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import user from "/src/assets/user-img.png";
+import { FaChevronUp } from "react-icons/fa";
+
 export default function HeroSection() {
   const solutions = [
     {
@@ -37,6 +39,7 @@ export default function HeroSection() {
   const [activeTab, setActiveTab] = useState("student");
   return (
     <div
+      id="moveUp"
       className="min-h-screen bg-[#FF5500] relative overflow-hidden"
       style={{
         backgroundImage: `url('src/assets/banner-bg.png')`, // Replace with your image path
@@ -181,6 +184,11 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+      <button className="fixed z-50 right-24 rounded bottom-8 bg-orange-500 p-2">
+        <a href="#moveUp">
+          <FaChevronUp className="text-white  text-2xl font-bold" />
+        </a>
+      </button>
     </div>
   );
 }
