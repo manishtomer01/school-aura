@@ -1,7 +1,7 @@
 import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import user from "../assets/user-img.png";
+import user from "/src/assets/user-img.png";
 export default function HeroSection() {
   const solutions = [
     {

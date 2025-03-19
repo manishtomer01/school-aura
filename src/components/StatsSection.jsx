@@ -1,8 +1,8 @@
-import client from "../assets/client.png";
-import client1 from "../assets/client-1.png";
-import client2 from "../assets/client-2.png";
-import client3 from "../assets/client-3.png";
-import client4 from "../assets/client-4.png";
+import client from "/src/assets/client.png";
+import client1 from "/src/assets/client-1.png";
+import client2 from "/src/assets/client-2.png";
+import client3 from "/src/assets/client-3.png";
+import client4 from "/src/assets/client-4.png";
 
 export const StatsSection = ({ elementsRef }) => {
   return (

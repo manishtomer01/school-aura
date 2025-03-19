@@ -1,11 +1,10 @@
 "use client";
 
 import gsap from "gsap";
-import { useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import wave from "../assets/wave.png";
-import clip from "../assets/clip2.png";
-import layer from "../assets/Layer-20.png";
+import wave from "/src/assets/wave.png";
+import clip from "/src/assets/clip2.png";
+import layer from "/src/assets/Layer-20.png";
 
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);

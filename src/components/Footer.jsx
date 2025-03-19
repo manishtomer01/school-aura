@@ -1,15 +1,9 @@
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaWhatsapp,
-} from "react-icons/fa";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import fb from "../assets/fb.png";
-import whatsapp from "../assets/whatsapp.png";
-import insta from "../assets/insta.png";
-import twitter from "../assets/twitter.png";
+import fb from "/src/assets/fb.png";
+import whatsapp from "/src/assets/whatsapp.png";
+import insta from "/src/assets/insta.png";
+import twitter from "/src/assets/twitter.png";
 const Footer = ({ elementsRef }) => {
   return (
     <footer className="bg-[#0c0c23] text-gray-200 pt-10">

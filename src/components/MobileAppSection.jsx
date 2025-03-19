@@ -1,7 +1,7 @@
 import React from "react";
-import schoolaura from "../assets/school_aura_app.png";
-import spreading from "../assets/spreading.png";
-import clip from "../assets/Clip (1).png";
+import schoolaura from "/src/assets/school_aura_app.png";
+import spreading from "/src/assets/spreading.png";
+import clip from "/src/assets/Clip (1).png";
 const MobileAppSection = ({ elementsRef }) => {
   return (
     <div className="">
@@ -72,7 +72,10 @@ const MobileAppSection = ({ elementsRef }) => {
           />
         </div>
       </section>
-      <div ref={(el) => (elementsRef.current[5] = el)} className="flex justify-center relative mx-14">
+      <div
+        ref={(el) => (elementsRef.current[5] = el)}
+        className="flex justify-center relative mx-14"
+      >
         <img src={clip} className="z-50" alt="" />
         <div
           className="absolute top-0 left-0 w-full h-full grid grid-cols-4 items-center justify-center text-start pl-20"

@@ -1,5 +1,5 @@
-import cloud from "../assets/logo-cloud.png";
-import logo from "../assets/logo_school.png";
+import cloud from "/src/assets/logo-cloud.png";
+import logo from "/src/assets/logo_school.png";
 import CustomDropdown from "./CustomDropdown";
 export default function Navbar() {
   const ExamSolutionItems = [
