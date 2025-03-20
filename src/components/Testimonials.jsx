@@ -39,13 +39,13 @@ const testimonials = [
 
 const Testimonials = ({ elementsRef }) => {
   return (
-    <div className="bg-gray-100 py-10 mt-28">
+    <div className="bg-gray-100 py-10 mt-28 min-w-full">
       <div ref={(el) => (elementsRef.current[12] = el)}>
         <h2 className="text-center text-5xl font-bold text-gray-900">
           WHAT <span className="text-orange-500">PARENT SAYS</span>
         </h2>
 
-        <div className="max-w-5xl mx-auto mt-6">
+        <div className="sm:max-w-5xl max-w-xs mx-auto mt-6">
           <Swiper
             modules={[Pagination, Autoplay]}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -60,8 +60,8 @@ const Testimonials = ({ elementsRef }) => {
             spaceBetween={30}
             slidesPerView={1}
             breakpoints={{
-              640: { slidesPerView: 2 },
-              768: { slidesPerView: 3 },
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 1 },
               1024: { slidesPerView: 4 },
             }}
           >

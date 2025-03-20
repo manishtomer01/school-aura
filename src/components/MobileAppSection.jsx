@@ -4,7 +4,7 @@ import spreading from "/src/assets/spreading.png";
 import clip from "/src/assets/Clip (1).png";
 const MobileAppSection = ({ elementsRef }) => {
   return (
-    <div className="">
+    <div className="min-w-full">
       <section className="bg-gray-100 pb-8 flex flex-col md:flex-row items-center gap-8">
         <div className="">
           <img
@@ -74,11 +74,11 @@ const MobileAppSection = ({ elementsRef }) => {
       </section>
       <div
         ref={(el) => (elementsRef.current[5] = el)}
-        className="flex justify-center relative mx-14"
+        className="flex justify-center sm:relative sm:mx-14"
       >
-        <img src={clip} className="z-50" alt="" />
+        <img src={clip} className="z-50 hidden sm:block" alt="" />
         <div
-          className="absolute top-0 left-0 w-full h-full grid grid-cols-4 items-center justify-center text-start pl-20"
+          className="sm:absolute top-0 left-0 w-full h-full grid grid-cols-2 sm:gap-0 gap-10 sm:grid-cols-4 items-center justify-center text-start sm:pl-20"
           style={{ backgroundColor: "#141830ff", pointerEvents: "none" }}
         >
           <div className="">

@@ -9,10 +9,10 @@ export const StatsSection = ({ elementsRef }) => {
     <section className="bg-[#f2f2f2ff] py-12 px-6 md:px-16 flex flex-col md:flex-row items-center gap-16">
       <div
         ref={(el) => (elementsRef.current[6] = el)}
-        className="w-full md:w-1/2 flex justify-center relative"
+        className="w-full md:w-1/2 flex sm:flex-row flex-col justify-center relative"
       >
-        <div className="absolute bg-[#666666ff] mt-20 w-52 h-52 md:w-72 md:h-80 z-40" />
-        <div className="absolute bg-[#0d1029ff] mt-32 mr-42 w-52 h-52 md:w-58 md:h-78" />
+        <div className="  absolute bg-[#666666ff] mt-20 w-52 h-52 md:w-72 md:h-80 z-40" />
+        <div className=" absolute bg-[#0d1029ff] mt-32 mr-42 w-52 h-52 md:w-58 md:h-78" />
         <img
           src={client}
           alt="Student"
@@ -21,13 +21,13 @@ export const StatsSection = ({ elementsRef }) => {
       </div>
       <div className="w-full  text-center md:text-left">
         <h2 className="text-3xl md:text-5xl font-semibold text-gray-900">
-          <div className="text-5xl black">WE</div>{" "}
-          <div className="text-orange-500 text-5xl mt-1">
+          <div className="sm:text-5xl text-3xl black">WE</div>{" "}
+          <div className="text-orange-500 sm:text-5xl text-3xl mt-1">
             <span className="border-b-2 border-black border-">ARE SP</span>
             READING
           </div>
         </h2>
-        <div className="grid grid-cols-2 gap-6 mt-6">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-6 mt-6">
           <div
             ref={(el) => (elementsRef.current[7] = el)}
             className="flex items-center gap-4"

@@ -37,7 +37,7 @@ export default function HomePage() {
     });
   }, []);
   return (
-    <div>
+    <div className="flex justify-center flex-col items-center ">
       <Header />
       <Navbar />
       <HeroSection />

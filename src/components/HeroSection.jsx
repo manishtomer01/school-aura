@@ -5,7 +5,7 @@ import user from "/src/assets/user-img.png";
 import { FaChevronUp } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import headerGirlIcon from "../assets/header-girl-icon.png";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function HeroSection() {
@@ -53,15 +53,21 @@ export default function HeroSection() {
   return (
     <div
       id="moveUp"
-      className="min-h-screen bg-[#FF5500] relative overflow-hidden"
+      className="min-h-auto pb-48 bg-[#FF5500] relative overflow-hidden min-w-full"
       style={{
-        backgroundImage: `url('src/assets/banner-bg.png')`, // Replace with your image path
+        backgroundImage: `url('src/assets/banner-bg.png')`,
         backgroundPosition: "center",
       }}
     >
-      <div ref={containerRef} className="flex gap-4 m-6 pt-10">
-        <div className="">
-          <div className="">
+      {/* <div ref={containerRef} className="flex justify-center gap-4 m-6 pt-10"> */}
+      <div
+        ref={containerRef}
+        // style={{ gridTemplateColumns: "3fr 1fr" }}
+        // className="grid gap-4 m-6"
+        className="flex sm:flex-row flex-col-reverse gap-4 m-6"
+      >
+        <div className="sm:flex-[3]">
+          <div className="mt-12 ml-16">
             <h1 className="text-5xl md:text-6xl text-white mb-2">
               BE A <span className="text-black">SMART STUDENT</span>
             </h1>
@@ -69,11 +75,20 @@ export default function HeroSection() {
               SchoolAura Is A Smart Education Platform
             </h2>
           </div>
-          <div className="grid grid-cols-4 gap-2">
+          {/* <div className="flex justify-around gap-2"> */}
+          <div
+            style={{ gridTemplateColumns: "1fr 1fr 1fr 1fr" }}
+            className="sm:grid relative pl-18 pt-12"
+          >
+            <img
+              className="absolute left-2 top-0"
+              src={headerGirlIcon}
+              alt="headerGirlIcon"
+            />
             {solutions.map((solution, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg py-4 px-7 shadow-lg"
+                className="bg-white max-w-xl rounded-lg py-4 px-7 shadow-lg shadow-black mx-2"
               >
                 <h3 className="text-xl font-bold text-center mb-2">
                   {solution.title.split(" ").slice(0, -1).join(" ")}
@@ -101,8 +116,8 @@ export default function HeroSection() {
             ))}
           </div>
         </div>
-        <div className="relative flex-1 ">
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="relative sm:flex-1 mt-6 max-w-lg">
+          <div className="bg-white rounded-lg shadow-2xl shadow-black overflow-hidden">
             {/* Avatar */}
             <div className="flex absolute left-[37%] justify-center -mt-12 mb-4">
               <div className="w-24 h-24 rounded-full bg-[#C71585] flex items-center justify-center border-4 border-white overflow-hidden">

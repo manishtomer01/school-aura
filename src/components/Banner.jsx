@@ -13,7 +13,7 @@ export default function Banner({ elementsRef }) {
   return (
     <div className="relative bg-white">
       <div className="relative px-8 py-16">
-        <img className="absolute left-0 bottom-28" src={wave} alt="" />
+        {/* <img className="absolute left-0 bottom-0 w-full" src={wave} alt="" /> */}
         <div className="flex">
           <div
             ref={(el) => (elementsRef.current[0] = el)}

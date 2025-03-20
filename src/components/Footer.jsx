@@ -6,7 +6,7 @@ import insta from "/src/assets/insta.png";
 import twitter from "/src/assets/twitter.png";
 const Footer = ({ elementsRef }) => {
   return (
-    <footer className="bg-[#0c0c23] text-gray-200 pt-10">
+    <footer className="bg-[#0c0c23] text-gray-200 mt-20 pt-20 min-w-full">
       <div
         ref={(el) => (elementsRef.current[13] = el)}
         className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"

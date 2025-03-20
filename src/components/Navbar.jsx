@@ -17,10 +17,10 @@ export default function Navbar() {
     { label: "Become Tutor", link: "#" },
   ];
   return (
-    <div className="bg-[#FF5500] flex justify-between">
+    <div className="bg-[#FF5500] flex justify-between min-w-full">
       <div className="relative">
-        <img src={cloud} width={180} alt="" />
-        <img className="absolute top-2 left-8" src={logo} width={120} alt="" />
+        <img src={cloud} width={220} alt="" />
+        <img className="absolute top-2 left-12" src={logo} width={120} alt="" />
       </div>
       <div className="flex gap-10 text-white py-2">
         <div className="hover:text-yellow-300">Home</div>

@@ -50,14 +50,14 @@ export default function Sevices({ elementsRef }) {
   const [activeCategory, setActiveCategory] = useState("Competitive");
 
   return (
-    <div className="mt-[30%]">
+    <div className="mt-96 w-full text-center">
       <div className="mx-12 text-4xl font-bold">
         <div className="">PROVIDE</div>
         <div className="text-[#ff5203ff]">BEST EDUCATIONAL</div>
       </div>
       <div
         ref={(el) => (elementsRef.current[3] = el)}
-        className="flex w-full max-w-6xl mx-auto mt-10"
+        className="flex w-full sm:max-w-6xl mx-auto mt-10 shadow shadow-black"
       >
         <div className="w-1/4 flex flex-col border-r border-gray-300">
           {categories.map((category) => (
